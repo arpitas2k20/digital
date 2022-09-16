@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Digital Clock</h1>
+      <div id="clk">
+        <p id="word"></p>
+        <p id="date"></p>
+      </div>
+    </center>
+  </body>
+  <div>
+    <script>
+      let cl = document.getElementById("word");
+      function clock() {
+        let t = new Date();
+        console.log(t);
+        let hr = t.getHours();
+        let min = t.getMinutes();
+        let sec = t.getSeconds();
+        let yr = t.getFullYear();
+        let mon = t.getMonth();
+        let date = t.getDate();
+        let month = mon + 1;
+        let dt = date + "/" + month + "/" + yr;
+        let t1 = hr + ":" + min + ":" + sec;
+        if (min < 10) {
+          min = "0" + min;
+        }
+        if (sec < 10) {
+          sec = "0" + sec;
+        }
+        cl.innerHTML = t1;
+        document.getElementById("date").innerHTML = dt;
+        setTimeout(clock, 1000);
+      }
+      clock();
+    </script>
+  </div>
+</html>

@@ -1,0 +1,26 @@
+body {
+  background-color: rgba(188, 225, 235, 0.863);
+}
+#clk {
+  padding: 20px;
+  margin-top: 100px;
+  height: 250px;
+  width: 400px;
+  background-image: linear-gradient(
+    rgba(235, 132, 132, 0.871),
+    rgba(114, 218, 114, 0.852)
+  );
+}
+#word {
+  font-size: xx-large;
+  font-style: oblique;
+}
+#date {
+  font-style: oblique;
+  font-size: xx-large;
+}
+h1 {
+  width: 350px;
+  margin-top: 100px;
+  background-color: rgba(195, 151, 235, 0.833);
+}
